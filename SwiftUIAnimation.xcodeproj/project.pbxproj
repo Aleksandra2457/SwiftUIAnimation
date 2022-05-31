@@ -11,6 +11,11 @@
 		D337D30A2845363C002DC221 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D337D3092845363C002DC221 /* ContentView.swift */; };
 		D337D30C2845363F002DC221 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D337D30B2845363F002DC221 /* Assets.xcassets */; };
 		D337D30F2845363F002DC221 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D337D30E2845363F002DC221 /* Preview Assets.xcassets */; };
+		D337D31628453C04002DC221 /* CloudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D337D31528453C04002DC221 /* CloudView.swift */; };
+		D34EF90A28461F810067C1DD /* ThunderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EF90928461F810067C1DD /* ThunderView.swift */; };
+		D34EF90C284624640067C1DD /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EF90B284624640067C1DD /* SoundManager.swift */; };
+		D34EF90E284626810067C1DD /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EF90D284626810067C1DD /* ButtonView.swift */; };
+		D34EF9122846279D0067C1DD /* grom.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D34EF9112846279D0067C1DD /* grom.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		D337D3092845363C002DC221 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D337D30B2845363F002DC221 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D337D30E2845363F002DC221 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D337D31528453C04002DC221 /* CloudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudView.swift; sourceTree = "<group>"; };
+		D34EF90928461F810067C1DD /* ThunderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThunderView.swift; sourceTree = "<group>"; };
+		D34EF90B284624640067C1DD /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		D34EF90D284626810067C1DD /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		D34EF9112846279D0067C1DD /* grom.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = grom.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,11 @@
 			children = (
 				D337D3072845363C002DC221 /* SwiftUIAnimationApp.swift */,
 				D337D3092845363C002DC221 /* ContentView.swift */,
+				D337D31528453C04002DC221 /* CloudView.swift */,
+				D34EF90928461F810067C1DD /* ThunderView.swift */,
+				D34EF90D284626810067C1DD /* ButtonView.swift */,
+				D34EF90B284624640067C1DD /* SoundManager.swift */,
+				D34EF9102846278A0067C1DD /* Sounds */,
 				D337D30B2845363F002DC221 /* Assets.xcassets */,
 				D337D30D2845363F002DC221 /* Preview Content */,
 			);
@@ -65,6 +80,14 @@
 				D337D30E2845363F002DC221 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D34EF9102846278A0067C1DD /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				D34EF9112846279D0067C1DD /* grom.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +150,7 @@
 			files = (
 				D337D30F2845363F002DC221 /* Preview Assets.xcassets in Resources */,
 				D337D30C2845363F002DC221 /* Assets.xcassets in Resources */,
+				D34EF9122846279D0067C1DD /* grom.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +161,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D337D31628453C04002DC221 /* CloudView.swift in Sources */,
+				D34EF90A28461F810067C1DD /* ThunderView.swift in Sources */,
+				D34EF90E284626810067C1DD /* ButtonView.swift in Sources */,
 				D337D30A2845363C002DC221 /* ContentView.swift in Sources */,
 				D337D3082845363C002DC221 /* SwiftUIAnimationApp.swift in Sources */,
+				D34EF90C284624640067C1DD /* SoundManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

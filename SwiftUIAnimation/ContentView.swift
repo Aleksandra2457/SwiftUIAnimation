@@ -8,10 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var isAnimated = false
+    
     var body: some View {
-        Text("Hello, world!")
+        ZStack {
+            Color.gray
+                .ignoresSafeArea()
+            VStack {
+                    Rectangle()
+                    .frame(width: UIScreen.main.bounds.width - 32, height: UIScreen.main.bounds.height * 0.5)
+                        .overlay(CloudView())
+                        .offset(x: isAnimated ? 0 : -UIScreen.main.bounds.width)
+                    .animation(.easeIn, value: isAnimated)
+                Spacer()
+                ButtonView {
+                    isAnimated.toggle()
+                    if isAnimated {
+                        SoundManager.shared.playSound()
+                    }
+                }
+            }
             .padding()
+        }
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
@@ -19,3 +40,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
