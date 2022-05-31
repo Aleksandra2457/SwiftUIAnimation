@@ -19,7 +19,7 @@ struct ContentView: View {
                     Rectangle()
                     .frame(width: UIScreen.main.bounds.width - 32, height: UIScreen.main.bounds.height * 0.5)
                         .overlay(CloudView())
-                        .offset(x: isAnimated ? 0 : -UIScreen.main.bounds.width)
+                        .scaleEffect(isAnimated ? 1 : 0)
                     .animation(.easeIn, value: isAnimated)
                 Spacer()
                 ButtonView {
